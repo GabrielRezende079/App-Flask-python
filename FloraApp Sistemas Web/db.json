@@ -1,0 +1,18 @@
+{
+  "plantas": {
+    "1": {
+      "nome_comum": "Planta Radical",
+      "nome_cientifico": "PlantisRadicalis",
+      "familia": "Maneiros",
+      "tipo": "Irada e Mortal",
+      "luz": "O dia todo",
+      "agua": "3x ao dia",
+      "temperatura": "25C",
+      "toxicidade": "para humanos fracos",
+      "observacoes": "",
+      "id": "e56bf006-980f-4d16-beda-9f41298b5662",
+      "data_criacao": "2025-11-27T16:45:00.140646",
+      "data_atualizacao": "2025-11-27T16:45:18.835345"
+    }
+  }
+}
