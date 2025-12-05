@@ -1,14 +1,14 @@
 # python app.py - Arquivo principal da aplicação Flask
 
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # Adicione esta linha
+from flask_cors import CORS  
 from tinydb import TinyDB, Query
 from datetime import datetime
 import uuid
 import os
 
-app = Flask(__name__)
-CORS(app)  # Adicione esta linha logo após criar o app
+app = Flask(__name__) # Inicializa a aplicação Flask
+CORS(app)  # Habilita CORS para permitir requisições de diferentes origens
 
 # Inicializa o TinyDB no arquivo db.json
 db = TinyDB('db.json')
@@ -19,8 +19,9 @@ Plantas = db.table('plantas')
 # Cria um objeto Query para buscas eficientes
 PlantasQuery = Query()
 
-# --- Simulação de Configuração AWS (para futura migração) ---
-# Você usaria estas variáveis para enviar mensagens ao SQS na AWS
+# --- Simulação de Configuração AWS  ---
+
+# Usaria esta variáveis para enviar mensagens ao SQS na AWS
 # Por enquanto, o envio de mensagem será apenas um print.
 SQS_QUEUE_URL = os.environ.get('SQS_URL', 'SQS_URL_MOCKADA') 
 
